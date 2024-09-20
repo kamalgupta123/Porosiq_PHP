@@ -1,0 +1,308 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.navbar {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media (max-width: 770px) {
+  .navbar {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+}
+
+.navbar__logo {
+  width: 220px;
+  margin-left: -28px;
+}
+
+.navbar__login {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  background-color: #EBECEB;
+}
+
+.container {
+  height: inherit;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 120px;
+}
+
+@media (max-width: 770px) {
+  .content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+}
+
+.content__heading {
+  font-size: 3rem;
+}
+
+@media (max-width: 770px) {
+  .content__heading {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .content__heading {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 770px) {
+  .content__headingBox {
+    margin-bottom: 2rem;
+  }
+}
+
+.loginBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 14px 6px 48px -6px rgba(0, 0, 0, 0.62);
+  box-shadow: 14px 6px 48px -6px rgba(0, 0, 0, 0.62);
+  padding: 20px;
+  color: white;
+}
+
+@media (max-width: 770px) {
+  .loginBox {
+    margin: 2rem 0;
+    width: 100%;
+  }
+}
+
+.loginBox__heading {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: white;
+}
+
+.loginBox__forgotPassword {
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+.loginBox__userContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.5rem 0;
+  font-size: 1.4rem;
+}
+
+.loginBox__otpContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2.5rem 0;
+  font-size: 1.4rem;
+}
+
+.loginBox__formContainer {
+  width: 100%;
+}
+
+.loginBox__userid {
+  border: none;
+  font-size: 1.4rem;
+  padding-left: 0;
+}
+
+.loginBox__userid:focus {
+  outline-style: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-color: transparent;
+}
+
+.loginBox__login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.loginBox__back {
+  color: white;
+}
+
+.loginBox__back:hover {
+  color: white;
+}
+
+.loginBox__loginbtn {
+  font-size: 1.3rem !important;
+  margin: 2rem 2px;
+  padding: 5px 20px !important;
+  font-size: 1.4rem;
+  color: white;
+}
+
+.loginBox__loginbtn:hover {
+  color: white;
+  background-color: #eb3f78;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 1rem 0rem;
+  color: black;
+  font-size: 1.2rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 770px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 770px) {
+  .footer__copyright {
+    margin: 1rem 0;
+  }
+}
+
+.footer__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+@media (max-width: 770px) {
+  .footer__links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer__about {
+  color: inherit;
+  margin-right: 1rem;
+}
+
+.footer__about:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer__contact {
+  color: inherit;
+}
+
+.footer__contact:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.footer__cognatic {
+  color: black;
+  padding-top: 1px;
+  display: inline-block;
+}
+
+.footer__cognatic:hover {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.6);
+}
+/*# sourceMappingURL=index.css.map */

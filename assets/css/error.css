@@ -1,0 +1,121 @@
+body {
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+.nav {
+  background-color: #07689F;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav__logo {
+  width: 220px;
+}
+
+.main {
+  height: 80vh;
+  background-size: cover;
+  background-image: url("../images/Background.jpg");
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  color: white;
+}
+
+.main::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+.main__heading {
+  margin-top: 4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 2;
+}
+
+.main__heading h5 {
+  margin-left: 0.5rem;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  font-weight: 600;
+}
+
+.main__subHeading {
+  z-index: 1;
+  margin: 1rem;
+}
+
+.main__text {
+  z-index: 1;
+  font-size: medium;
+}
+
+.main__btn {
+  z-index: 1;
+  background-color: #07689F;
+  border-radius: 4px;
+  color: #fff;
+  display: inline-block;
+  font-size: 16px;
+  margin: 12px 0 0;
+  padding: 10px 62px;
+  text-decoration: none;
+}
+
+.main__btn:hover {
+  color: white;
+  background-color: #48ace6;
+}
+
+.footer {
+  height: 85px;
+  background-color: #07689F;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__copyright {
+  color: white;
+  padding: 0.4rem 0;
+  font-size: 0.8rem;
+}
+
+.footer__cognatic {
+  color: #78c7f5;
+  font-size: 0.8rem;
+}
+
+.footer__cognatic:hover {
+  color: #c4e8fd;
+  text-decoration: none;
+}
+/*# sourceMappingURL=404.css.map */

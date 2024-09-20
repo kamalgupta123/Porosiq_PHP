@@ -1,0 +1,30 @@
+.grp_manipulate_table .mycontainer{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;}
+.grp_manipulate_table .mycontainer .table1{width: 40%;}
+table.dataTable tbody tr.selected1 {
+    background-color: #b6ffb6!important;
+  }
+  table.dataTable tbody tr.selected2 {
+    background-color: #fb9e9e!important;
+  } 
+  table.dataTable tr.odd,table.dataTable tr.even{background-color: #fff!important;border-bottom: 1px solid #ededed;}
+table.dataTable tr.odd td.sorting_1 {
+    background-color: transparent!important;}
+table.dataTable tr.even td.sorting_1 {background-color: transparent!important;}
+
+.grp_manipulate_table .mycontainer{display: flex;align-items: center;justify-content: space-between;flex-wrap: wrap;}
+.grp_manipulate_table{font-size: 15px;}
+.grp_manipulate_table table ul{list-style-type: none;padding: 0;margin: 0;}
+.table1_table{border: 1px solid #ededed;}
+.table1 button.btn,.dataTables_paginate a,.mybuttons button
+{background-color: transparent!important;border: 2px solid #4343ef!important;color: #4343ef!important;
+	outline: none!important;margin-bottom: 15px!important;}
+.table1 button.btn i{margin-right: 10px;}
+.grp_manipulate_table .table1 .table1_table h2 {padding: 3px 10px;}
+.grp_manipulate_table .table1:nth-child(1) .table1_table h2 i{color: #ff3e3e;margin-right: 15px;}
+.grp_manipulate_table .table1:nth-child(3) .table1_table h2 i{color: #0ec50e;margin-right: 15px;}
+.dataTables_paginate a{text-decoration: none;color: #4343ef!important;padding: 6px 12px!important;display: inline-block;margin-bottom: 0!important;}
+.dataTables_paginate{float: none;width: 100%;text-align: center;height: 100%!important;line-height: inherit;padding: 10px 0;}
+.dataTables_info{display: none;}
+.mybuttons{display: flex;align-items: center;justify-content: center;flex-wrap: wrap;}
+.mybuttons button{width: 100%;font-size: 22px;padding: 5px 10px;}
+table.dataTable td {padding: 10px 10px;}

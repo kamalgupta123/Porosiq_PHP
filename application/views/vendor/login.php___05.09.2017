@@ -1,0 +1,229 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Vendor Login</title>
+        <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport" />
+        <!-- Bootstrap 3.3.6 -->
+        <link rel="stylesheet" href="<?php echo base_url(); ?>assets/bootstrap/css/bootstrap.css"/>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css"/>
+        <!-- Ionicons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"/>
+
+        <!-- Favicon -->
+
+        <link rel="apple-touch-icon" sizes="57x57" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-57x57.png" />
+        <link rel="apple-touch-icon" sizes="60x60" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-60x60.png" />
+        <link rel="apple-touch-icon" sizes="72x72" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-72x72.png" />
+        <link rel="apple-touch-icon" sizes="76x76" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-76x76.png" />
+        <link rel="apple-touch-icon" sizes="114x114" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-114x114.png" />
+        <link rel="apple-touch-icon" sizes="120x120" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-120x120.png" />
+        <link rel="apple-touch-icon" sizes="144x144" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-144x144.png" />
+        <link rel="apple-touch-icon" sizes="152x152" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-152x152.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="<?php echo base_url(); ?>assets/favicon.ico/apple-icon-180x180.png" />
+        <link rel="icon" type="image/png" sizes="192x192"  href="<?php echo base_url(); ?>assets/favicon.ico/android-icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="<?php echo base_url(); ?>assets/favicon.ico/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="96x96" href="<?php echo base_url(); ?>assets/favicon.ico/favicon-96x96.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="<?php echo base_url(); ?>assets/favicon.ico/favicon-16x16.png" />
+        <link rel="manifest" href="<?php echo base_url(); ?>assets/favicon.ico/manifest.json" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
+        <meta name="msapplication-TileImage" content="<?php echo base_url(); ?>assets/favicon.ico/ms-icon-144x144.png" />
+        <meta name="theme-color" content="#ffffff" />
+
+        <!-- Favicon -->
+
+         <style>
+             .text{ float:right; padding:30px 10px; color:#fff; font-size:16px; display:inline-block;}
+            .text:hover{ color:#CCCCCC; text-decoration:none;}
+            .login-page{
+                background:url(<?php echo base_url(); ?>assets/images/bg.jpg) no-repeat;
+                background-size:cover;
+            }
+            /*.logo{ margin:22px 0 69px;}*/
+            .logo img{ width:20%;}
+            .global{ padding:136px 30px;}
+            .global span{ font-size:29px; font-family:Arial, Helvetica, sans-serif; font-weight:400; color:#fff;}
+            .login-box-body {
+                border-radius: 10px;
+                background: rgba(255,255,255,0.4 );
+                border-top: 0 none;
+                /* box-shadow: 15px 20px 50px #b1b1b1; */
+                color: #b1b1b1;
+                margin: 1px 30px;
+                padding: 20px;
+            }
+            .login-box-msg{ text-align:center; font-size:25px; color:#fff; margin:40px 0;}
+            .form-control-feedback {
+                font-size: 14px;
+                margin: 10px 0;
+            }
+            .form-group.has-feedback > label {
+                font-size: 16px;
+                color: #666;
+            }
+            .checkbox.icheck > label {
+                font-size: 16px;
+                color: #666;
+            }
+            a {
+                font-size: 12px;
+            }
+            /*.mid{ margin-bottom:155px;}*/
+            .link{ text-align:center; color:#fff; font-size:12px;line-height: 46px; }
+            .link1 ul{ list-style:none; float:right; margin:0;}
+            .link1 ul li{ display:inline-block;}
+            .link1 a {color: #fff;font-size: 12px;line-height: 23px;padding: 0 0 0 10px;}
+            .link1 a:hover{ text-decoration:none; color:#ccc;}
+            .pnc{ float:right;}
+            .pnc a {color: #fff;}
+            .pnc a:hover{ text-decoration:none; color:#ccc;}
+            hr{margin:0;}
+            .col-lg-6, .col-md-6, .col-sm-6{ padding-right:0 !important;}
+            .mid {margin-bottom: 76px;}
+            @media only screen and (max-width: 479px) {
+                .logo {text-align: center;}
+                .logo img {width: 32%;}
+                .global {padding: 0px 6px 30px;}
+                .login-box-body{ margin:0;}
+                .mid {margin-bottom: 52px;}
+                hr {width: 88%;}
+            }
+            @media only screen and (min-width: 480px) and (max-width: 767px) {
+                .logo {text-align: center;}
+                .logo img {width: 32%;}
+                .global {padding: 0px 6px 30px;}
+                .login-box-body{ margin:0;}
+                .mid {margin-bottom: 52px;}
+                hr {width: 88%;}
+            }
+            @media only screen and (min-width: 768px) and (max-width: 1023px) {
+                .login-page {height: 1024px;}
+            }
+        </style>
+    </head>
+
+    <body class="login-page">
+        <div class="container">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+                <div class="logo">
+                    <img src="<?php echo base_url(); ?>assets/images/logo-white.png" alt="" />
+                </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-6 clearfix">
+<!--                <a class="text" href="http://procuretechstaff.com/" target="_blank">Welcome to ProcureTechstaff</a>
+                <a class="text" href="#" target="_blank">Welcome to PNCCAPITAL</a>-->
+            </div>
+        </div>
+        <section class="mid">
+            <div class="container mid">
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="global">
+                          <span><?php echo "Welcome To Procureline&trade; Next Generation " . ucwords(PROJECT_NAME); ?></span>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="login-box-body">
+                            <p class="login-box-msg">GRMS LOGIN</p>
+                            <?php if ($this->session->flashdata('succ_msg')) { ?>
+                                <div class="alert alert-success"> <?php echo $this->session->flashdata('succ_msg'); ?> </div>
+                            <?php } ?>
+                            <?php if ($this->session->flashdata('error_msg')) { ?>
+                                <div class="alert alert-danger"> <?php echo $this->session->flashdata('error_msg'); ?> </div>
+                            <?php } ?>
+                            <form action="<?php echo site_url('vendor_valid_login'); ?>" method="post" enctype="multipart/form-data" id="login_form">
+                                <div class="form-group has-feedback">
+                                    <label>Email</label>
+                                    <input type="email" class="form-control validate[required,custom[email]]" name="email" placeholder="Email" />
+                                    <span class=" form-control-feedback"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="form-group has-feedback">
+                                    <label>Password</label>
+                                    <input type="password" name="password" class="form-control validate[required]" placeholder="Password" />
+                                    <span class="form-control-feedback"><i class="fa fa-lock" aria-hidden="true"></i></span>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-8">
+                                        <div class="checkbox icheck">
+                                            <label>
+                                                <input type="checkbox" name="remember_me" id="remember_me" class="" /> Remember Me
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <!-- /.col -->
+                                    <div class="col-xs-4">
+                                        <button type="submit" class="btn btn-success btn-block btn-flat">Sign In</button>
+                                    </div>
+                                    <!-- /.col -->
+                                </div>
+                            </form>
+
+
+
+                            <a href="<?php echo base_url('vendor-forgot-password'); ?>">I forgot my password</a><br/>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <div  class="row">
+                    <hr></hr>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="link">
+                            <span>Copyright © Proculine. All rights reserved. Copyright with PNCCAPITAL LLC</span>
+                        </div>    
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-6">
+                        <div class="link1 clearfix">
+                            <ul>
+                              <li><a href="<?php echo site_url('about-us'); ?>" target="_blank">About Us</a></li>
+                                <li><a href="<?php echo site_url('contact-us'); ?>" target="_blank">Contact Us</a></li>
+                            </ul>
+                        </div>   
+                         <span class="pnc"><a href="" target="_blank">Click here to PNC CAPITAL</a></span>
+                    </div>
+
+                </div>
+            </div>
+        </footer>
+        <!-- jQuery 2.2.3 -->
+        <script src="<?php echo base_url(); ?>assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
+        <!-- Bootstrap 3.3.6 -->
+        <script src="<?php echo base_url(); ?>assets/bootstrap/js/bootstrap.min.js"></script>
+        <!-- iCheck -->
+        <!--<script src="--><?php //echo base_url();                ?><!--assets/plugins/iCheck/icheck.min.js"></script>-->
+        <script>
+            //    $(function () {
+            //        $('input').iCheck({
+            //            checkboxClass: 'icheckbox_square-blue',
+            //            radioClass: 'iradio_square-blue',
+            //            increaseArea: '20%' // optional
+            //        });
+            //    });
+        </script>
+
+        <link rel="stylesheet"
+              href="<?php echo base_url(); ?>assets/jQuery-Validation-Engine-master/css/validationEngine.jquery.css"
+              type="text/css"/>
+        <script src="<?php echo base_url(); ?>assets/jQuery-Validation-Engine-master/js/languages/jquery.validationEngine-en.js"
+                type="text/javascript" charset="utf-8">
+        </script>
+        <script src="<?php echo base_url(); ?>assets/jQuery-Validation-Engine-master/js/jquery.validationEngine.js"
+                type="text/javascript" charset="utf-8">
+        </script>
+        <script>
+            $(document).ready(function () {
+                // binds form submission and fields to the validation engine
+                $("#login_form").validationEngine({promptPosition: 'inline'});
+            });
+
+            $(function () {
+                $('.alert').delay(5000).fadeOut('slow');
+            })
+        </script>
+    </body>
+</html>

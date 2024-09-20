@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<!-- JS INCLIDES -->
+    <script type="text/javascript" src="./blockid.js"></script>
+    <script type="text/javascript">
+
+        function logDebug(message, object, reset) {
+            if (reset) {
+                document.getElementById("debugarea").innerHTML = ""    
+            }
+            document.getElementById("debugarea").innerHTML += ( "</br><b>" + message + "</b></br>")
+            if (object) {
+                let str = JSON.stringify(object, null, 4)
+                document.getElementById("debugarea").innerHTML += ( str + "</br>")
+            }
+        }
+
+        function createSession() {
+            logDebug("", null, true)
+            createNewSession("Fingerprint", "firstname", "qrcode", null, function(result, error) {
+                logDebug("auth result:", result, false)
+            })
+        }
+
+    </script>
+<!-- END JS INCLIDES -->
+<style>
+    body { white-space: pre; font-family: monospace; }
+    .payload {
+        background-color: rgb(175, 197, 205);    
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+        
+
+</style>
+    <body>
+        <button onclick="createSession()">Start Session</button>
+        <div id="qrcode">
+            QR will show here
+        </div>
+
+        <div id="debugarea" class="debugarea">
+            debug area
+        </div>        
+
+    </body>
+</html>
